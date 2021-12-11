@@ -1,0 +1,46 @@
+#ball,
+#ball1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  /* animation: rotate 2s linear infinite; */
+}
+
+#ball1 {
+  top: calc(100% - 50px);
+  left: calc(100% - 50px);
+  background-color: blue;
+}
+
+/* #box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: teal;
+  animation: rotate 2s linear infinite;
+} */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 0%;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  80% {
+    border-radius: 40%;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 0%;
+  }
+}
